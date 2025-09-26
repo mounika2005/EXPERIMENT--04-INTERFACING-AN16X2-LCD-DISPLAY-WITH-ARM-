@@ -14,12 +14,9 @@ interfaces Datasheet - production data Features
 25 DMIPS/MHz (Dhrystone 2.
 1), and DSP instructions
 • Memories – Up to 256 Kbytes of Flash memory – Up to 64 Kbytes of SRAM
-
-
-   ## LCD 16X2 
+ ## LCD 16X2 
    16×2 LCD is named so because; it has 16 Columns and 2 Rows. There are a lot of combinations available like,
    8×1, 8×2, 10×2, 16×1, etc. But the most used one is the 16*2 LCD, hence we are using it here.
-
 All the above mentioned LCD display will have 16 Pins and the programming approach is also the same and hence the choice is left to you. 
 Below is the Pinout and Pin Description of 16x2 LCD Module:
 
@@ -37,81 +34,43 @@ Whereas in 8 bit mode we can send the 8-bit data directly in one stroke since we
  LCD Commands:
 
 There are some preset commands instructions in LCD, which we need to send to LCD through some microcontroller. Some important command instructions are given below:
-
 Hex Code
-
 Command to LCD Instruction Register
-
 0F
-
 LCD ON, cursor ON
-
 01
-
 Clear display screen
-
 02
-
 Return home
-
 04
-
 Decrement cursor (shift cursor to left)
-
 06
-
 Increment cursor (shift cursor to right)
-
 05
-
 Shift display right
-
 07
-
 Shift display left
-
 0E
-
 Display ON, cursor blinking
-
 80
-
 Force cursor to beginning of first line
-
 C0
-
 Force cursor to beginning of second line
-
 38
-
 2 lines and 5×7 matrix
-
 83
-
 Cursor line 1 position 3
-
 3C
-
 Activate second line
-
 08
-
 Display OFF, cursor OFF
-
 C1
-
 Jump to second line, position 1
-
 OC
-
 Display ON, cursor OFF
-
 C1
-
 Jump to second line, position 1
-
 C2
-
 Jump to second line, position 2
  
 ## Procedure:
@@ -157,20 +116,9 @@ Jump to second line, position 2
 We are now at the last part of step by step guide on how to simulate STM32 project in Proteus.
 
 13. Create a new Proteus project and place STM32F40xx i.e. the same MCU for which the project was created in STM32Cube IDE. 
-14. After creation of the circuit as per requirement as shown below 
-
-![image](https://user-images.githubusercontent.com/36288975/233856847-32bea88a-565f-4e01-9c7e-4f7ed546ddf6.png)
-
-14. Double click on the the MCU part to open settings. Next to the Program File option, give full path to the Hex file generated using STM32Cube IDE. Then set the external crystal frequency to 8M (i.e. 8 MHz). Click OK to save the changes.
-https://engineeringxpert.com/wp-content/uploads/2022/04/26.png
-
-15. click on debug and simulate using simulation as shown below 
-
-![image](https://user-images.githubusercontent.com/36288975/233856904-99eb708a-c907-4595-9025-c9dbd89b8879.png)
 
 ## CIRCUIT DIAGRAM 
 ![image](https://user-images.githubusercontent.com/36288975/233857974-bda6200e-4f88-4e7b-b189-4da80210fa23.png)
-
 
 ## STM 32 CUBE PROGRAM :
 ```
